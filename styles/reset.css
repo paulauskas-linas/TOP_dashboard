@@ -18,7 +18,9 @@ note: |
 
 category: global
 */
-*, ::before, ::after { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: border-box; 
+margin: 0;
+padding: 0;}
 
 
 /* @docs
@@ -33,7 +35,7 @@ links:
 
 category: global
 */
-html { line-height: normal; }
+html { line-height: normal; height: 100%; width: 100%;}
 
 
 /* @docs
@@ -128,7 +130,6 @@ category: embedded elements
 */
 img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
-  vertical-align: middle;
   max-width: 100%;
 }
 audio:not([controls]) { display:none; }
@@ -245,4 +246,8 @@ input {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+li {
+  list-style: none;
 }
